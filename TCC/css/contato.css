@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+
+header {
+    background-color: none;
+    display: flex;
+    justify-content:space-around; 
+    height: 146px;
+    align-items: center;
+    box-shadow: 2px 2px 10px #646464;
+    backface-visibility: 20%;
+    font-size: large;
+    font-weight: bold;
+
+}
+header img {
+    height: 130px;
+    width: 240px;
+}
+#logo {
+    text-decoration:none;
+}
+nav {
+    font-family: "Outfit", sans-serif;
+}
+
+
+.linksNav {
+    padding: 10px 20px 10px 10px;
+    color: black;
+    margin: 10px;
+    text-decoration:none;        
+    transition: 0.3s;
+}
+#linkContato{
+    color: #008eff;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 7px;
+}
+#linkHome:hover{
+    color: red;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 7px;
+    display: inline-block;
+    transform: translateY(-5px);
+    transition:0.3s;
+}
+#linkSobre:hover{
+    color: #36c14c;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 7px;
+    display: inline-block;
+    transform: translateY(-5px);
+    transition:0.3s;
+}
+#linkEspaco:hover{
+    color: #008eff;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 7px;
+    display: inline-block;
+    transform: translateY(-5px);
+    transition:0.3s;
+}
+#linkDecoracao:hover{
+    color: red;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 7px;
+    display: inline-block;
+    transform: translateY(-5px);
+    transition:0.3s;
+}
+#linkLocaliza:hover{
+    color: #36c14c;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 7px;
+    display: inline-block;
+    transform: translateY(-5px);
+    transition:0.3s;
+}
+
+
+
+.agendamento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.agendamento h2 {
+    color: #333;
+    text-align: center;
+}
+
+.agendamento input[type="date"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+
+    border: 2px solid #ddd;
+    border-radius: 8px;
+}
+
+.agendamento button {
+    padding: 12px 25px;
+
+    background-color: #36c14c;
+    color: white;
+
+    border: none;
+    border-radius: 8px;
+
+    font-size: 16px;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.agendamento button:hover {
+    background-color: #36c14c;
+}
