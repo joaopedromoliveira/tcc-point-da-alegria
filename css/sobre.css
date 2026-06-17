@@ -115,3 +115,83 @@ nav {
     transform: translateY(-5px);
     transition:0.3s;
 }
+
+
+main{
+    height: 1000px;
+    font-family: "Outfit", sans-serif;
+}
+
+footer{
+    height: 200px;
+    font-family: "Outfit", sans-serif;
+    background: #ffffff;
+}
+.colunas{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 180px;
+    background: transparent;
+}
+.footer-colunas{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 50px 10px 50px;
+}  
+
+
+.logo-footer{
+    height: 100px;
+    width: 200px;
+    margin-bottom: 10px;                                                                  
+}
+#redes-sociais{
+    height: 25px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+}
+#redes-sociais h3 {
+    width: 100px;
+}
+.logoSociais{
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+}
+
+#coluna-central{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 100px;
+    line-height: 27px;
+}
+.tres-links{
+    display: flex;
+    flex-direction: column;
+    font-size: larger;
+}
+.links-footer{
+    color: black;
+    text-decoration: none;
+    transition:0.2s;
+}
+#link-vermelho:hover{
+    color:red;
+}
+#link-verde:hover{
+    color:#36c14c;
+}
+#link-azul:hover{
+    color:#008cff;
+}
+
+#footer-encontre{
+    width: 240px;
+}
+#rotulo{
+    text-align: center;
+    font-size: bolder;
+}
