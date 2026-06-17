@@ -30,9 +30,30 @@ nav {
     font-family: "Outfit", sans-serif;
 }
 
+.linksNav::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background-color: currentColor;
+    transform: translateX(-50%);
+    transition: width 0.5s  all ease;
+}
+
+#linkDecoracao:hover::after,
+#linkSobre:hover::after,
+#linkEspaco:hover::after,
+#linkContato:hover::after,
+#linkHome:hover::after{
+    width: 80%;
+}
+
+
 
 .linksNav {
-    padding: 10px 20px 10px 10px;
+    padding: 10px 10px 10px 10px;
     color: rgb(0, 0, 0);
     margin: 10px;
     text-decoration:none;        
@@ -48,7 +69,6 @@ nav {
 #linkHome:hover{
     color: red;
     font-weight: bold;
-    text-decoration: underline;
     text-decoration-thickness: 3px;
     text-underline-offset: 7px;
     display: inline-block;
@@ -58,7 +78,6 @@ nav {
 #linkSobre:hover{
     color: #36c14c;
     font-weight: bold;
-    text-decoration: underline;
     text-decoration-thickness: 3px;
     text-underline-offset: 7px;
     display: inline-block;
@@ -68,7 +87,6 @@ nav {
 #linkEspaco:hover{
     color: #008eff;
     font-weight: bold;
-    text-decoration: underline;
     text-decoration-thickness: 3px;
     text-underline-offset: 7px;
     display: inline-block;
@@ -78,7 +96,6 @@ nav {
 #linkDecoracao:hover{
     color: red;
     font-weight: bold;
-    text-decoration: underline;
     text-decoration-thickness: 3px;
     text-underline-offset: 7px;
     display: inline-block;
@@ -88,7 +105,6 @@ nav {
 #linkContato:hover{
     color: #008eff;
     font-weight: bold;
-    text-decoration: underline;
     text-decoration-thickness: 3px;
     text-underline-offset: 7px;
     display: inline-block;
@@ -100,4 +116,3 @@ nav {
     margin: 50px;
     border-radius: 1%;
 }
-

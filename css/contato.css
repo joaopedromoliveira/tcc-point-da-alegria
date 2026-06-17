@@ -17,7 +17,7 @@ header {
     backface-visibility: 20%;
     font-size: large;
     font-weight: bold;
-
+    
 }
 header img {
     height: 130px;
@@ -31,8 +31,32 @@ nav {
 }
 
 
+.linksNav{
+    position: relative;
+    display: inline-block;
+}
+
+.linksNav::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background-color: currentColor;
+    transform: translateX(-50%);
+    transition: width 0.5s all ease;
+}
+
+#linkDecoracao:hover::after,
+#linkSobre:hover::after,
+#linkEspaco:hover::after,
+#linkLocaliza:hover::after,
+#linkHome:hover::after{
+    width: 80%;
+}
 .linksNav {
-    padding: 10px 20px 10px 10px;
+    padding: 10px 10px 10px 10px;
     color: black;
     margin: 10px;
     text-decoration:none;        
@@ -48,7 +72,6 @@ nav {
 #linkHome:hover{
     color: red;
     font-weight: bold;
-    text-decoration: underline;
     text-decoration-thickness: 3px;
     text-underline-offset: 7px;
     display: inline-block;
@@ -58,7 +81,6 @@ nav {
 #linkSobre:hover{
     color: #36c14c;
     font-weight: bold;
-    text-decoration: underline;
     text-decoration-thickness: 3px;
     text-underline-offset: 7px;
     display: inline-block;
@@ -68,7 +90,6 @@ nav {
 #linkEspaco:hover{
     color: #008eff;
     font-weight: bold;
-    text-decoration: underline;
     text-decoration-thickness: 3px;
     text-underline-offset: 7px;
     display: inline-block;
@@ -78,7 +99,6 @@ nav {
 #linkDecoracao:hover{
     color: red;
     font-weight: bold;
-    text-decoration: underline;
     text-decoration-thickness: 3px;
     text-underline-offset: 7px;
     display: inline-block;
@@ -88,15 +108,12 @@ nav {
 #linkLocaliza:hover{
     color: #36c14c;
     font-weight: bold;
-    text-decoration: underline;
     text-decoration-thickness: 3px;
     text-underline-offset: 7px;
     display: inline-block;
     transform: translateY(-5px);
     transition:0.3s;
 }
-
-
 
 .agendamento {
     display: flex;

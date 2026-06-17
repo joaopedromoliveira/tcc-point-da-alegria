@@ -30,8 +30,8 @@ header {
 }
 .logo{
     text-decoration:none;
-    height: 130px;
-    width: 240px;
+    height: 110px;
+    width: 220px;
 }
 nav {
    font-family: "Outfit", sans-serif;
@@ -39,7 +39,7 @@ nav {
 
 
 .linksNav{
-    padding: 10px 20px 10px 10px;
+    padding: 10px 10px 10px 10px;
     color: rgb(255, 255, 255);
     margin: 10px;
     text-decoration:none;
@@ -165,24 +165,24 @@ main {
     font-family: "Outfit", sans-serif;
 }
 
+
+
 footer{
-    min-height: 200px;
+    height: 200px;
     font-family: "Outfit", sans-serif;
-    background: rgb(256, 256, 256);
-    box-shadow: inset 0 80px 120px rgba(0,0,0,.25);
+    background: #ffffff;
+    box-shadow: inset 0 80px 120px rgba(0, 0, 0, 0.191);
+
 }
-
-
-.logo{
-    height: 130px;
-    width: 240px;
-
+.logo-footer{
+    height: 100px;
+    width: 200px;
+    margin-bottom: 10px;                                                                  
 }
 .colunas{
-    
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     height: 180px;
     background: transparent;
 }
@@ -195,19 +195,41 @@ footer{
     text-decoration: none;
     color: black;
 }
+#coluna-central{
+    width: 220px;
+    display: flex;
+    justify-content: space-between;
+}
+#coluna-central a{
+    width: 50px;
+}
+#coluna-central div{
+    display: flex;
+    flex-direction: column;
+}
 #footer-encontre{
-    width: 250px;
+    width: 240px;
 }
 #redes-sociais{
     height: 25px;
-    width: 60px;
+    width: 200px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+}
+#redes-sociais h3 {
+    width: 100px;
 }
 .logoSociais{
     width: 20px;
     height: 20px;
+    margin-left: 5px;
 }
+#rotulo{
+    text-align: center;
+    font-size: bolder;
+}
+
+
 
 .custom-shape-divider-bottom {
     position: absolute;
@@ -218,65 +240,34 @@ footer{
     line-height: 0;
     z-index: 4;
 }
-
-.custom-shape-divider-bottom::after{
-    content:"";
-    position:absolute;
-    left:0;
-    
-    width:100%;
-    height:80px;
-    background:linear-gradient(
-        to bottom,
-        rgba(200,200,200,.20),
-        rgba(255, 255, 255, 0)
-    );
-}
-
 .custom-shape-divider-bottom svg {
     display: block;
     width: calc(100% + 1.3px);
     height: 150px;
     transform: rotateX(180deg);
-
+    
     filter:
         drop-shadow(0 20px 20px rgba(0,0,0,.20))
         drop-shadow(0 40px 40px rgba(0,0,0,.25))
         drop-shadow(0 60px 60px rgba(0,0,0,.20));
 }
-    
-
-
 .custom-shape-divider-bottom .shape-fill {
-    fill: rgb(185, 131, 131);
-    
-
+    fill: rgb(190, 18, 18);
 }
-
 @media (max-width: 767px) {
     .custom-shape-divider-bottom svg {
         width: calc(150% + 1.3px);
         height: 120px;
-        
     }
 }
-
-.custom-shape-divider-bottom svg path {
-    fill: #c8c8c8 !important;
-}
-
-.custom-shape-divider-bottom .elementor-shape-fill{
-    fill: rgb(200, 200, 200);
-}
-
 .custom-shape-divider-bottom path:last-child {
-    filter: drop-shadow(0 10px 15px rgba(0,0,0,.35));
+    filter: drop-shadow(0 10px 15px rgba(87, 87, 87, 0.35));
 
-    
 }
 
 .linksNav{
     position: relative;
+    display: inline-block;
 }
 
 .linksNav::after{
@@ -288,7 +279,7 @@ footer{
     height: 3px;
     background-color: currentColor;
     transform: translateX(-50%);
-    transition: width 0.5s ease;
+    transition: width 0.5s all ease;
 }
 
 #linkDecoracao:hover::after,
@@ -296,9 +287,22 @@ footer{
 #linkEspaco:hover::after,
 #linkLocaliza:hover::after,
 #linkContato:hover::after{
-    width: 100%;
+    width: 80%;
 }
 
-#onda-1 {
+#onda-2 {
+    fill: #36c14c;
+}
+#onda-3 {
     fill: #f5de84;
 }
+#onda-4 {
+    fill: #ff0000
+}
+#onda-5 {
+    fill: #008cff
+}
+#onda-6 {
+    fill: #D5D5D5       
+}
+
