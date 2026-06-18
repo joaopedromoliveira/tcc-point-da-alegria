@@ -73,7 +73,17 @@
         </section>
         <p id="rotulo">@ CodeSet, 2026. Todos os direitos reservados.</p>
     </footer>
-    <script src="script/script.js" defer></script>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+    <script src="../script/script.js" defer></script>
 </body>    
 </html>
 

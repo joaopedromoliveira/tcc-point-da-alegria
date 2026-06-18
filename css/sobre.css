@@ -62,6 +62,7 @@ nav {
     margin: 10px;
     text-decoration:none;        
     transition: 0.3s;
+    z-index: 1;
 }
 #linkSobre{
     color: #36c14c;
@@ -115,6 +116,7 @@ nav {
     transform: translateY(-5px);
     transition:0.3s;
 }
+
 
 
 main{
@@ -195,3 +197,4 @@ footer{
     text-align: center;
     font-size: bolder;
 }
+
