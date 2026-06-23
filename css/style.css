@@ -9,99 +9,46 @@
 /* ================= HEADER ================= */
 
 header {
-    background-color: none;
     display: flex;
     justify-content:space-evenly; 
-    height: 146px;
     align-items: center;
-    box-shadow: 2px 2px 10px #646464;
-    backface-visibility: 20%;
     font-size: large;
     font-weight: bold;
+    
+    backface-visibility: 20%;
     
     position: absolute;
     top: 0;
     left: 0;
+    height: 146px;
     width: 100%;
     
-    z-index: 10;
-    
-    background: transparent;
-    box-shadow: none;
+    background: rgba(0,0,0,.25);
+    backdrop-filter: blur(4px);
+
+    z-index: 1000;
 }
-.logo{
+#logo{
     text-decoration:none;
     height: 110px;
     width: 220px;
 }
+
 nav {
     font-family: "Outfit", sans-serif;
 }
-
-
 .linksNav{
-    padding: 10px 10px 10px 10px;
+    position:relative;
+    display:inline-block;
+
+    padding:10px;
+    margin:10px;
+
     color:#f5f5f5;
-    margin: 10px;
+    font-size:18px;
     text-decoration:none;
-}
 
-#linkHome{
-    color: red;
-    font-weight: bold;
-    text-decoration: underline;
-    text-decoration-thickness: 3px;
-    text-underline-offset: 7px;
-}
-#linkSobre:hover{
-    display: inline-block;
-    color: #36c14c;
-    font-weight: bold;
-    text-decoration-thickness: 3px;
-    text-underline-offset: 7px;
-    transform: translateY(-5px);
-    transition:0.2s;
-}
-#linkEspaco:hover{
-    display: inline-block;
-    color: #008eff;
-    font-weight: bold;
-    text-decoration-thickness: 3px;
-    text-underline-offset: 7px;
-    transform: translateY(-5px);
-    transition:0.2s;
-}
-#linkDecoracao:hover{
-    display: inline-block;
-    color: red;
-    font-weight: bold;
-    text-decoration-thickness: 3px;
-    text-underline-offset: 7px;
-    transform: translateY(-5px);
-    transition:0.2s;
-}
-#linkLocaliza:hover{
-    display: inline-block;
-    color: #36c14c;
-    font-weight: bold;
-    text-decoration-thickness: 3px;
-    text-underline-offset: 7px;
-    transform: translateY(-5px);
-    transition:0.2s;
-}
-#linkContato:hover{
-    display: inline-block;
-    color: #008eff;
-    font-weight: bold;
-    text-decoration-thickness: 3px;
-    text-underline-offset: 7px;
-    transform: translateY(-5px);
-    transition:0.2s;
-}
-
-.linksNav{
-    position: relative;
-    display: inline-block;
+    transition:.3s;
 }
 .linksNav::after{
     content: "";
@@ -112,7 +59,7 @@ nav {
     height: 3px;
     background-color: currentColor;
     transform: translateX(-50%);
-    transition: width 0.5s all ease;
+    transition: 0.3s all ease;
 }
 #linkDecoracao:hover::after,
 #linkSobre:hover::after,
@@ -122,11 +69,42 @@ nav {
     width: 80%;
 }
 
+#linkHome{
+    color: red;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 7px;
+}
+#linkSobre:hover{
+    color: #36c14c;
+    transform: translateY(-5px);
+}
+#linkEspaco:hover{
+    color: #008eff;
+    transform: translateY(-5px);
+}
+#linkDecoracao:hover{
+    color: red;
+    transform: translateY(-5px);
+}
+#linkLocaliza:hover{
+    color: #36c14c;
+    transform: translateY(-5px);
+}
+#linkContato:hover{
+    color: #008eff;
+    transform: translateY(-5px);
+}
+
 /* ================= MAIN ================= */
 
 main {
     min-height: 100vh;
 }
+
+/* ================= VIDEO BANNER ================= */
+
 .video-container {
     position: relative;
     width: 100%;
@@ -153,6 +131,8 @@ main {
   background: rgba(0, 0, 0, 0.5); /* 50% de opacidade preta */
   z-index: 2;
 }
+
+/* ================= CONTEUDO ================= */
 
 #content {
   position: relative;
@@ -188,6 +168,58 @@ main {
     color: #f5de84;
     font-size: 40px;
     font-family: "Outfit", sans-serif;
+}
+
+/* ================= ONDAS ================= */
+
+.custom-shape-divider-bottom {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    overflow: visible;
+    line-height: 0;
+    z-index: 4;
+}
+.custom-shape-divider-bottom svg {
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+    transform: rotateX(180deg);
+    
+    filter:
+        drop-shadow(0 20px 20px rgba(0,0,0,.20))
+        drop-shadow(0 40px 40px rgba(0,0,0,.25))
+        drop-shadow(0 60px 60px rgba(0,0,0,.20));
+}
+.custom-shape-divider-bottom .shape-fill {
+    fill: rgb(252, 252, 252);
+}
+@media (max-width: 767px) {
+    .custom-shape-divider-bottom svg {
+        width: calc(150% + 1.3px);
+        height: 120px;
+    }
+}
+.custom-shape-divider-bottom path:last-child {
+    filter: drop-shadow(0 10px 15px rgba(87, 87, 87, 0.35));
+
+}
+
+#onda-2 {
+    fill: #36c14c;
+}
+#onda-3 {
+    fill: #f5de84;
+}
+#onda-4 {
+    fill: #ff0000
+}
+#onda-5 {
+    fill: #008cff
+}
+#onda-6 {
+    fill: #D5D5D5       
 }
 
 /* ================= FOOTER ================= */
@@ -288,58 +320,6 @@ footer{
 #rotulo{
     text-align: center;
     font-size: bolder;
-}
-
-/* ================= ONDAS ================= */
-
-.custom-shape-divider-bottom {
-    position: absolute;
-    bottom: -1px;
-    left: 0;
-    width: 100%;
-    overflow: visible;
-    line-height: 0;
-    z-index: 4;
-}
-.custom-shape-divider-bottom svg {
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 150px;
-    transform: rotateX(180deg);
-    
-    filter:
-        drop-shadow(0 20px 20px rgba(0,0,0,.20))
-        drop-shadow(0 40px 40px rgba(0,0,0,.25))
-        drop-shadow(0 60px 60px rgba(0,0,0,.20));
-}
-.custom-shape-divider-bottom .shape-fill {
-    fill: rgb(252, 252, 252);
-}
-@media (max-width: 767px) {
-    .custom-shape-divider-bottom svg {
-        width: calc(150% + 1.3px);
-        height: 120px;
-    }
-}
-.custom-shape-divider-bottom path:last-child {
-    filter: drop-shadow(0 10px 15px rgba(87, 87, 87, 0.35));
-
-}
-
-#onda-2 {
-    fill: #36c14c;
-}
-#onda-3 {
-    fill: #f5de84;
-}
-#onda-4 {
-    fill: #ff0000
-}
-#onda-5 {
-    fill: #008cff
-}
-#onda-6 {
-    fill: #D5D5D5       
 }
 
 /* ================= WPP FIXO ================= */

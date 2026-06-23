@@ -9,34 +9,47 @@
 /* ================= HEADER ================= */
 
 header {
-    background-color: none;
     display: flex;
-    justify-content:space-around; 
-    height: 146px;
+    justify-content:space-evenly; 
     align-items: center;
-    box-shadow: 2px 2px 10px #646464;
-    backface-visibility: 20%;
     font-size: large;
     font-weight: bold;
     
+    backface-visibility: 20%;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 146px;
+    width: 100%;
+    
+    background: rgba(0,0,0,.25);
+    backdrop-filter: blur(4px);
 
+    z-index: 1000;
 }
-header img {
-    height: 130px;
-    width: 240px;
-}
-#logo {
+#logo{
     text-decoration:none;
+    height: 110px;
+    width: 220px;
 }
+
 nav {
     font-family: "Outfit", sans-serif;
 }
-
 .linksNav{
-    position: relative;
-    display: inline-block;
-}
+    position:relative;
+    display:inline-block;
 
+    padding:10px;
+    margin:10px;
+
+    color:#f5f5f5;
+    font-size:18px;
+    text-decoration:none;
+
+    transition:.3s;
+}
 .linksNav::after{
     content: "";
     position: absolute;
@@ -46,7 +59,7 @@ nav {
     height: 3px;
     background-color: currentColor;
     transform: translateX(-50%);
-    transition: width 0.5s  all ease;
+    transition: 0.3s  all ease;
 }
 #linkSobre:hover::after,
 #linkEspaco:hover::after,
@@ -56,14 +69,6 @@ nav {
     width: 80%;
 }
 
-
-.linksNav {
-    padding: 10px 10px 10px 10px;
-    color: rgb(0, 0, 0);
-    margin: 10px;
-    text-decoration:none;        
-    transition: 0.3s;
-}
 #linkDecoracao{
     color: red;
     font-weight: bold;
@@ -73,48 +78,23 @@ nav {
 }
 #linkHome:hover{
     color: red;
-    font-weight: bold;
-    text-decoration-thickness: 3px;
-    text-underline-offset: 7px;
-    display: inline-block;
     transform: translateY(-5px);
-    transition:0.3s;
 }
 #linkSobre:hover{
     color: #36c14c;
-    font-weight: bold;
-    text-decoration-thickness: 3px;
-    text-underline-offset: 7px;
-    display: inline-block;
     transform: translateY(-5px);
-    transition:0.3s;
 }
 #linkEspaco:hover{
     color: #008eff;
-    font-weight: bold;
-    text-decoration-thickness: 3px;
-    text-underline-offset: 7px;
-    display: inline-block;
     transform: translateY(-5px);
-    transition:0.3s;
 }
 #linkLocaliza:hover{
     color: #36c14c;
-    font-weight: bold;
-    text-decoration-thickness: 3px;
-    text-underline-offset: 7px;
-    display: inline-block;
     transform: translateY(-5px);
-    transition:0.3s;
 }
 #linkContato:hover{
     color: #008eff;
-    font-weight: bold;
-    text-decoration-thickness: 3px;
-    text-underline-offset: 7px;
-    display: inline-block;
     transform: translateY(-5px);
-    transition:0.3s;
 }
 
 /* ================= MAIN ================= */
@@ -122,6 +102,30 @@ nav {
 main{
     height: 1000px;
     font-family: "Outfit", sans-serif;
+    background:#f5f5f5;
+}
+
+/* ================= BANNER ================= */
+
+.banner-decoracao{
+    position: relative;
+    height: 450px;
+
+    padding-top: 146px;
+
+    background-image: url("../assets/img/buffet-infantil.jpg");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+.banner-decoracao::before{
+    content:"";
+    position:absolute;
+    inset:0;
+
+    background:rgba(0,0,0,.55);
+
+    z-index:1;
 }
 
 /* ================= FOOTER ================= */
