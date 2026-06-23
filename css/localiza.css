@@ -1,45 +1,71 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
+/* ================= HEADER ================= */
 
-header {
-    background-color: none;
-    display: flex;
-    justify-content:space-around; 
-    height: 146px;
-    align-items: center;
-    box-shadow: 2px 2px 10px #646464;
-    backface-visibility: 20%;
-    font-size: large;
-    font-weight: bold;
-    
+header{
+    position:absolute;
+    top:0;
+    left:0;
+
+    width:100%;
+    height:146px;
+
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+
+    font-size:large;
+    font-weight:bold;
+
+    background:rgba(0,0,0,.25);
+    backdrop-filter: blur(4px);
+
+    z-index:1000;
 }
-header img {
-    height: 130px;
-    width: 240px;
+
+header img{
+    width:240px;
+    height:130px;
 }
-#logo {
+
+#logo{
     text-decoration:none;
 }
-nav {
-    font-family: "Outfit", sans-serif;
+
+nav{
+    font-family:"Outfit",sans-serif;
+}
+
+.linksNav{
+    position:relative;
+    display:inline-block;
+
+    padding:10px;
+    margin:10px;
+
+    color:#f5f5f5;
+    font-size:18px;
+    text-decoration:none;
+
+    transition:.3s;
 }
 
 .linksNav::after{
-    content: "";
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    width: 0;
-    height: 3px;
-    background-color: currentColor;
-    transform: translateX(-50%);
-    transition: width 0.5s  all ease;
+    content:"";
+    position:absolute;
+    left:50%;
+    bottom:0;
+    width:0;
+    height:3px;
+    background:currentColor;
+    transform:translateX(-50%);
+    transition:.4s;
 }
 
 #linkDecoracao:hover::after,
@@ -47,150 +73,140 @@ nav {
 #linkEspaco:hover::after,
 #linkContato:hover::after,
 #linkHome:hover::after{
-    width: 80%;
+    width:80%;
 }
 
-
-
-.linksNav {
-    padding: 10px 10px 10px 10px;
-    color: rgb(0, 0, 0);
-    margin: 10px;
-    text-decoration:none;        
-    transition: 0.3s;
-}
 #linkLocaliza{
-    color: #36c14c;
-    font-weight: bold;
-    text-decoration: underline;
-    text-decoration-thickness: 3px;
-    text-underline-offset: 7px;
-}
-#linkHome:hover{
-    color: red;
-    font-weight: bold;
-    text-decoration-thickness: 3px;
-    text-underline-offset: 7px;
-    display: inline-block;
-    transform: translateY(-5px);
-    transition:0.3s;
-}
-#linkSobre:hover{
-    color: #36c14c;
-    font-weight: bold;
-    text-decoration-thickness: 3px;
-    text-underline-offset: 7px;
-    display: inline-block;
-    transform: translateY(-5px);
-    transition:0.3s;
-}
-#linkEspaco:hover{
-    color: #008eff;
-    font-weight: bold;
-    text-decoration-thickness: 3px;
-    text-underline-offset: 7px;
-    display: inline-block;
-    transform: translateY(-5px);
-    transition:0.3s;
-}
-#linkDecoracao:hover{
-    color: red;
-    font-weight: bold;
-    text-decoration-thickness: 3px;
-    text-underline-offset: 7px;
-    display: inline-block;
-    transform: translateY(-5px);
-    transition:0.3s;
-}
-#linkContato:hover{
-    color: #008eff;
-    font-weight: bold;
-    text-decoration-thickness: 3px;
-    text-underline-offset: 7px;
-    display: inline-block;
-    transform: translateY(-5px);
-    transition:0.3s;
+    color:#36c14c;
+    font-weight:bold;
+    text-decoration:underline;
+    text-decoration-thickness:3px;
+    text-underline-offset:7px;
 }
 
+#linkHome:hover{
+    color:red;
+    transform:translateY(-5px);
+}
+
+#linkSobre:hover{
+    color:#36c14c;
+    transform:translateY(-5px);
+}
+
+#linkEspaco:hover{
+    color:#008eff;
+    transform:translateY(-5px);
+}
+
+#linkDecoracao:hover{
+    color:red;
+    transform:translateY(-5px);
+}
+
+#linkContato:hover{
+    color:#008eff;
+    transform:translateY(-5px);
+}
+
+/* ================= MAIN ================= */
 
 main{
-    height: 1000px;
-    font-family: "Outfit", sans-serif;
-    min-height: 80vh;
-    background-color: #f5f5f5;
-    padding: 80px 8%;
+    height: 1050px;
+    font-family:"Outfit",sans-serif;
+    background:#f5f5f5;
 }
 
-#maps{
-    margin: 50px;
-
-}
-
-.localizacao{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 50px;
-}
-
-.texto-localizacao{
-    width: 45%;
-}
-
-.texto-localizacao h1{
-    font-family: "Outfit", sans-serif;
-    font-size: 60px;
-    color: #2d2d8d;
-    margin-bottom: 25px;
-    line-height: 1.1;
-}
-
-.texto-localizacao p{
-    font-family: "Outfit", sans-serif;
-    font-size: 22px;
-    line-height: 1.8;
-    margin-bottom: 15px;
-}
-
-.dados{
-    margin-top: 30px;
-}
-
-.dados p{
-    font-weight: bold;
-}
-
-.mapa-localizacao{
-    width: 50%;
-}
-
-.mapa-localizacao iframe{
-    width: 100%;
-    height: 450px;
-    border: none;
-    box-shadow: 0 0 20px rgba(0,0,0,.2);
-}
+/* ================= BANNER ================= */
 
 .banner-localizacao{
-    height: 350px;
-    background-image: url("../assets/img/buffet-infantil.jpg");
-    background-size: cover;
-    background-position: center;
+    position:relative;
+    height:450px;
+
+    background-image:url("../assets/img/buffet-infantil.jpg");
+    background-size:cover;
+    background-position:center;
+
     display:flex;
     justify-content:center;
     align-items:center;
 }
 
-.banner-localizacao h1{
-    color:white;
-    font-size:70px;
-    font-family:"Outfit", sans-serif;
+.banner-localizacao::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.45);
 }
+
+.banner-localizacao h1{
+    position:relative;
+    z-index:2;
+
+    color:#fff;
+    font-size:70px;
+    text-shadow:3px 3px 12px rgba(0,0,0,.4);
+}
+
+/* ================= CONTEÚDO ================= */
+
+#maps{
+    padding:80px 8%;
+}
+
+.localizacao{
+    display:flex;
+    align-items:center;
+    gap:60px;
+
+    max-width:1200px;
+    margin:0px auto;
+    margin-top:10px;
+}
+
+.texto-localizacao{
+    width:45%;
+	flex:1;
+}
+
+.texto-localizacao h1{
+    font-size:60px;
+    color:#2d2d8d;
+    margin-bottom:25px;
+}
+
+.texto-localizacao p{
+    font-size:22px;
+    line-height:1.8;
+}
+
+.dados{
+    margin-top:30px;
+}
+
+.dados p{
+    font-weight:bold;
+}
+
+.mapa-localizacao{
+    width:50%;
+	flex:0.9;
+}
+
+.mapa-localizacao iframe{
+    width:100%;
+    height:450px;
+    border:none;
+	border-radius:15px;
+    box-shadow:0 8px 25px rgba(0,0,0,.2);
+}
+
+/* ================= FOOTER ================= */
 
 footer{
     height: 200px;
     font-family: "Outfit", sans-serif;
-    background: #ffffff;
+    background: #f5f5f5;
 }
 .colunas{
     display: flex;
@@ -202,10 +218,15 @@ footer{
 .footer-colunas{
     display: flex;
     flex-direction: column;
-    margin: 10px 50px 10px 50px;
+    justify-content: center;
 }  
 
-
+#primeira-coluna{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 265px;
+}
 .logo-footer{
     height: 100px;
     width: 200px;
@@ -216,14 +237,19 @@ footer{
     width: 200px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
-#redes-sociais h3 {
-    width: 100px;
+#redes-sociais h3{
+    font: bold;
+    position: relative;
+    top: -3px;
 }
 .logoSociais{
     width: 20px;
     height: 20px;
     margin-left: 5px;
+    line-height: 1;
 }
 
 #coluna-central{
@@ -254,9 +280,40 @@ footer{
 }
 
 #footer-encontre{
-    width: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 265px;
+    gap: 12px;
+}
+.footer-linha {
+    display: flex;
+    align-items: flex-start; 
+    gap: 8px;
+}
+.footer-linha p {
+    margin: 0;
+    line-height: 1.5;
 }
 #rotulo{
     text-align: center;
     font-size: bolder;
+}
+
+/* ================= WPP FIXO ================= */
+
+#wpp-link-fixo{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+#wpp-link-fixo img {
+    width: 60px;
+    height: auto;
+    filter: drop-shadow(0 0 5px rgba(0,0,0,0.3));
+    transition: transform 0.3s ease;
+}
+#wpp-link-fixo img:hover {
+    transform: scale(1.1);
 }

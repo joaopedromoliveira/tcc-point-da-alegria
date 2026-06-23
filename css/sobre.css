@@ -6,6 +6,7 @@
     box-sizing: border-box
 }
 
+/* ================= HEADER ================= */
 
 header{
     position:absolute;
@@ -30,8 +31,6 @@ header{
     
 }
     
-
-
 header img {
     height: 130px;
     width: 240px;
@@ -48,7 +47,6 @@ nav {
     display: inline-block;
     color: white;
 }
-
 .linksNav::after{
     content: "";
     position: absolute;
@@ -60,7 +58,6 @@ nav {
     transform: translateX(-50%);
     transition: width 0.5s  all ease;
 }
-
 #linkDecoracao:hover::after,
 #linkEspaco:hover::after,
 #linkLocaliza:hover::after,
@@ -69,7 +66,6 @@ nav {
     width: 80%;
 }
 
-
 .linksNav{
     position: relative;
     display: inline-block;
@@ -77,7 +73,7 @@ nav {
     padding: 10px;
     margin: 10px;
     font-size: 18px;
-    color: white;
+    color: #f5f5f5;
 
     text-decoration:none;
     transition:0.3s;
@@ -137,6 +133,7 @@ nav {
     transition:0.3s;
 }
 
+/* ================= MAIN ================= */
 
 main{
     height: 1000px;
@@ -154,7 +151,6 @@ main{
     background-position: center;
     overflow: hidden;
 }
-
 .sobre::before{
     content:"";
     position:absolute;
@@ -164,7 +160,6 @@ main{
 
     z-index:1;
 }
-
 .texto-sobre{
     position: relative;
     z-index: 2;
@@ -175,28 +170,23 @@ main{
     margin-left: 80px;
     max-width: 600px;
 }
-
 .texto-sobre h1{
     margin-bottom: 20px;
     text-shadow: 3px 3px 15px rgba(0,0,0,.5);
     font-size: 3rem;
 }
-
 .texto-sobre p{
     margin-top: 20px;
     font-size: 1.3rem;
     line-height: 1.7;
 }
 
-
-
-
-
+/* ================= FOOTER ================= */
 
 footer{
     height: 200px;
     font-family: "Outfit", sans-serif;
-    background: #ffffff;
+    background: #f5f5f5;
 }
 .colunas{
     display: flex;
@@ -208,10 +198,15 @@ footer{
 .footer-colunas{
     display: flex;
     flex-direction: column;
-    margin: 10px 50px 10px 50px;
+    justify-content: center;
 }  
 
-
+#primeira-coluna{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 265px;
+}
 .logo-footer{
     height: 100px;
     width: 200px;
@@ -222,14 +217,19 @@ footer{
     width: 200px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
-#redes-sociais h3 {
-    width: 100px;
+#redes-sociais h3{
+    font: bold;
+    position: relative;
+    top: -3px;
 }
 .logoSociais{
     width: 20px;
     height: 20px;
     margin-left: 5px;
+    line-height: 1;
 }
 
 #coluna-central{
@@ -260,10 +260,40 @@ footer{
 }
 
 #footer-encontre{
-    width: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 265px;
+    gap: 12px;
+}
+.footer-linha {
+    display: flex;
+    align-items: flex-start; /* Alinha o ícone com a primeira linha do texto */
+    gap: 8px;
+}
+.footer-linha p {
+    margin: 0;
+    line-height: 1.5;
 }
 #rotulo{
     text-align: center;
     font-size: bolder;
 }
 
+/* ================= WPP FIXO ================= */
+
+#wpp-link-fixo{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+#wpp-link-fixo img {
+    width: 60px;
+    height: auto;
+    filter: drop-shadow(0 0 5px rgba(0,0,0,0.3));
+    transition: transform 0.3s ease;
+}
+#wpp-link-fixo img:hover {
+    transform: scale(1.1);
+}

@@ -6,6 +6,7 @@
     box-sizing: border-box
 }
 
+/* ================= HEADER ================= */
 
 header {
     background-color: none;
@@ -40,7 +41,7 @@ nav {
 
 .linksNav{
     padding: 10px 10px 10px 10px;
-    color: rgb(255, 255, 255);
+    color:#f5f5f5;
     margin: 10px;
     text-decoration:none;
 }
@@ -121,6 +122,7 @@ nav {
     width: 80%;
 }
 
+/* ================= MAIN ================= */
 
 main {
     min-height: 100vh;
@@ -188,14 +190,13 @@ main {
     font-family: "Outfit", sans-serif;
 }
 
-
+/* ================= FOOTER ================= */
 
 footer{
     height: 200px;
     font-family: "Outfit", sans-serif;
     background: #ffffff;
     box-shadow: inset 0 80px 120px rgba(0, 0, 0, 0.191);
-    
 }
 .colunas{
     display: flex;
@@ -207,10 +208,15 @@ footer{
 .footer-colunas{
     display: flex;
     flex-direction: column;
-
+    justify-content: center;
 }  
 
-
+#primeira-coluna{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 265px;
+}
 .logo-footer{
     height: 100px;
     width: 200px;
@@ -221,14 +227,19 @@ footer{
     width: 200px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
-#redes-sociais h3 {
-    width: 100px;
+#redes-sociais h3{
+    font: bold;
+    position: relative;
+    top: -3px;
 }
 .logoSociais{
     width: 20px;
     height: 20px;
     margin-left: 5px;
+    line-height: 1;
 }
 
 #coluna-central{
@@ -259,14 +270,27 @@ footer{
 }
 
 #footer-encontre{
-    width: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 265px;
+    gap: 12px;
+}
+.footer-linha {
+    display: flex;
+    align-items: flex-start; 
+    gap: 8px;
+}
+.footer-linha p {
+    margin: 0;
+    line-height: 1.5;
 }
 #rotulo{
     text-align: center;
     font-size: bolder;
 }
 
-
+/* ================= ONDAS ================= */
 
 .custom-shape-divider-bottom {
     position: absolute;
@@ -318,3 +342,20 @@ footer{
     fill: #D5D5D5       
 }
 
+/* ================= WPP FIXO ================= */
+
+#wpp-link-fixo{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+#wpp-link-fixo img {
+    width: 60px;
+    height: auto;
+    filter: drop-shadow(0 0 5px rgba(0,0,0,0.3));
+    transition: transform 0.3s ease;
+}
+#wpp-link-fixo img:hover {
+    transform: scale(1.1);
+}

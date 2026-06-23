@@ -24,54 +24,41 @@
         </nav>
     </header>
 
-    <section class="banner-localizacao">
-    <h1>Localização</h1>
-    </section>
-
     <main>
-
-<section class="localizacao">
-    
-    <div class="texto-localizacao">
-
-        <h1>Onde estamos localizados?</h1>
-
-        <p>O Point da Alegria está localizado em uma região de fácil acesso,
-            proporcionando conforto e praticidade para todos os convidados.
-        </p>
-
-        <p>Nosso espaço conta com estacionamento próximo, acesso facilitado
-            e uma localização privilegiada para receber sua festa.</p>
-
-        <div class="dados">
-             <p>📍 Av. Parada Pinto, 885</p>
-             <p>📞 (11) 99999-9999</p>
-             <p>🕒 Segunda a Domingo - 09h às 22h</p>
-        </div>
-
-    </div>
-
-    <div class="mapa-localizacao">
-
-             <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.7591618190436!2d-46.664301524740004!3d-23.469150278863314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef7659c1ba48f%3A0x628f02f50fd7fba9!2sAv.%20Parada%20Pinto%2C%20885%20-%20Vila%20Nova%20Cachoeirinha%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2002611-003!5e0!3m2!1spt-BR!2sbr!4v1781045722282!5m2!1spt-BR!2sbr"
-            allowfullscreen=""
-            loading="lazy">
+        <section class="banner-localizacao"></section>
+        
+        <section class="localizacao">
+            <div class="texto-localizacao">
+                <h1>Onde estamos localizados?</h1>
+                <p>O Point da Alegria está localizado em uma região de fácil acesso,
+                proporcionando conforto e praticidade para todos os convidados.
+                </p>
+                <p>Nosso espaço conta com estacionamento próximo, acesso facilitado
+                e uma localização privilegiada para receber sua festa.</p>
+                <div class="dados">
+                <p><span>📍</span>Av. Parada Pinto, 885</p>
+                <p><span>📞</span>(11) 94573-7905</p>
+                <p><span>🕒</span>Segunda a Domingo - 09h às 22h</p>
+                </div>
+            </div>
+            <div class="mapa-localizacao">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.7591618190436!2d-46.664301524740004!3d-23.469150278863314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef7659c1ba48f%3A0x628f02f50fd7fba9!2sAv.%20Parada%20Pinto%2C%20885%20-%20Vila%20Nova%20Cachoeirinha%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2002611-003!5e0!3m2!1spt-BR!2sbr!4v1781045722282!5m2!1spt-BR!2sbr"
+            allowfullscreen="" loading="lazy">
             </iframe>
-     </div>
-
-</section>
+            </div>
+        </section>
     </main>
+
     <footer>
         <section class="colunas">
-            <div class="footer-colunas">
+            <div class="footer-colunas" id="primeira-coluna">
                 <img src="../assets/img/logo1.png" alt="Point da Alegria" class="logo-footer">
                 <div id="redes-sociais">
                     <h3>SIGA-NOS</h3>
                     <a href="https://www.instagram.com/point_da_alegria_?igsh=MWdqNncwZXI2eTJrZw==" target="_blank">
                     <img src="../assets/img/instagram.png" alt="Instagram" class="logoSociais">
                     </a>
-                    <a href="" target="_blank">
+                    <a href="https://wa.me/5511945737905" target="_blank">
                     <img src="../assets/img/wpp.png" alt="WhatsApp" class="logoSociais">
                     </a>
                     <a href="https://www.facebook.com/share/1HLyxg3eoz/?mibextid=wwXIfr" target="_blank">
@@ -93,8 +80,13 @@
             </div>
             <div class="footer-colunas" id="footer-encontre">
                 <h3>ENCONTRE-NOS</h3>
-                <p>Avenida Parada Pinto, 885 <br> Vila Nova Cachoeirinha</p>
-                <p>(11) 94573-7905 | (11) 94906-7793</p>
+                <div class="footer-linha">
+                <span>📍</span><p>Avenida Parada Pinto, 885<br>Vila Nova Cachoeirinha</p>
+                </div>
+    
+                <div class="footer-linha">
+                <span>📞</span><p>(11) 94573-7905 | (11) 94906-7793</p>
+                </div>
             </div>
         </section>
         <p id="rotulo">@ CodeSet, 2026. Todos os direitos reservados.</p>
@@ -104,12 +96,12 @@
         <div vw-plugin-wrapper>
           <div class="vw-plugin-top-wrapper"></div>
         </div>
-      </div>
+        </div>
+        <a href="https://wa.me/5511945737905" target="_blank" id="wpp-link-fixo">
+            <img src="../assets/img/wpp.png" alt="WhatsApp">
+        </a>
       <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-      <script>
-        new window.VLibras.Widget('https://vlibras.gov.br/app');
-      </script>
-
+      <script>new window.VLibras.Widget('https://vlibras.gov.br/app');</script>
 </body>    
 </html>
 
