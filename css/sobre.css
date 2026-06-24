@@ -109,13 +109,13 @@ main{
 
 .banner-sobre{
     position: relative;
-    height: 700px;
+    height: 600px;
 
     padding-top: 146px;
 
-    background-image: url("../assets/img/buffet-infantil.jpg");
-    background-size: cover;
-    background-position: center;
+    background-image: url("../assets/img/equipe.png");
+    background-size: 100%;
+    background-position: center 15%;
     overflow: hidden;
 }
 .banner-sobre::before{
@@ -131,9 +131,9 @@ main{
     position: relative;
     z-index: 2;
 
-    color:white;
+    color: #f5f5f5;
 
-    margin-top: 220px;
+    margin-top: 260px;
     margin-left: 80px;
     max-width: 600px;
 }
@@ -146,6 +146,54 @@ main{
     margin-top: 20px;
     font-size: 1.3rem;
     line-height: 1.7;
+}
+
+/* ================= CONTEÚDO ================= */
+
+.quem-somos{
+    display:flex;
+    align-items:center;
+    gap:60px;
+
+    max-width:1200px;
+    margin:0px auto;
+    margin-top:20px;
+}
+.texto-quem-somos{
+    width:45%;
+	flex:1;
+}
+.texto-quem-somos h1{
+    font-size:60px;
+    color:#36c14c;
+    margin-bottom:25px;
+}
+.texto-quem-somos p{
+    font-size:22px;
+    line-height:1.8;
+}
+.dados{
+    margin-top:30px;
+}
+.dados p{
+    font-weight:bold;
+}
+
+.texto-azul{
+    color: #008eff;
+    font-family: "Outfit", sans-serif;
+}
+.texto-laranja{
+    color: orange;
+    font-family: "Outfit", sans-serif;
+}
+.texto-vermelho{
+    color: red;
+    font-family: "Outfit", sans-serif;
+}
+.texto-verde{
+    color: #36c14c;
+    font-family: "Outfit", sans-serif;
 }
 
 /* ================= FOOTER ================= */
