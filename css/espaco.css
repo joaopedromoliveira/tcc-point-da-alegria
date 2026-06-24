@@ -102,7 +102,7 @@ nav {
 /* ================= MAIN ================= */
 
 main{
-    height: 1000px;
+    height: 1100px;
     font-family: "Outfit", sans-serif;
     background:#f5f5f5;
 }
@@ -115,7 +115,7 @@ main{
 
     padding-top: 146px;
 
-    background-image: url("../assets/img/buffet-infantil.jpg");
+    background-image: url("../assets/img/nosso_espaco_banner.PNG");
     background-size: cover;
     background-position: center;
     overflow: hidden;
@@ -129,6 +129,54 @@ main{
 
     z-index:1;
 }
+.texto-banner-espaco{
+    position: relative;
+    z-index: 2;
+
+    color: #f5f5f5;
+
+    margin-top: 260px;
+    margin-left: 80px;
+    max-width: 600px;
+}
+.texto-banner-espaco h1{
+    margin-bottom: 20px;
+    text-shadow: 3px 3px 15px rgba(0,0,0,.5);
+    font-size: 3rem;
+}
+.texto-banner-espaco p{
+    margin-top: 20px;
+    font-size: 1.3rem;
+    line-height: 1.7;
+}
+/* ================= CONTEÚDO ================= */
+
+.nosso-espaco{
+    display:flex;
+    align-items:center;
+    gap:60px;
+
+    max-width:1200px;
+    margin:0px auto;
+    margin-top:20px;
+}
+.texto-nosso-espaco{
+    width:450%;
+	flex:1;
+}
+.texto-nosso-espaco h1{
+    font-size:57px;
+    color:#008eff;
+    margin-bottom:25px;
+}
+.texto-nosso-espaco p{
+    font-size:22px;
+    line-height:1.8;
+}
+
+
+
+
 
 /* ================= FOOTER ================= */
 
@@ -246,3 +294,71 @@ footer{
 #wpp-link-fixo img:hover {
     transform: scale(1.1);
 }
+
+/* ================= CARROSSEL ================= */
+
+.carrossel-container {
+    margin-top: 30px;
+    position: relative;
+    width: 50%; /* Ocupa a outra metade da seção flex */
+    max-width: 550px;
+    height: 380px;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.carrossel-slides {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    width: 100%;
+    height: 100%;
+}
+
+/* Esconde a barra de rolagem nativa no Chrome/Safari/Firefox */
+.carrossel-slides::-webkit-scrollbar {
+    display: none;
+}
+.carrossel-slides {
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
+}
+
+.carrossel-slides img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que a foto preencha o espaço sem distorcer */
+    flex-shrink: 0;
+    scroll-snap-align: start;
+}
+
+/* Botões de Navegação */
+.btn-carrossel {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 24px;
+    padding: 12px 16px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%;
+    transition: background 0.3s, transform 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+}
+
+.btn-carrossel:hover {
+    background: rgba(0, 89, 255, 0.8);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.prev { left: 15px; }
+.next { right: 15px; }

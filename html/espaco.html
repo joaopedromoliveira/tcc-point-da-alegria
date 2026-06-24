@@ -26,6 +26,37 @@
 
     <main>
         <section class="banner-espaco">
+            <div class="texto-banner-espaco">
+            <h1>Nosso Espaço</h1>
+            <p>Conheça cada canto do nosso salão</p>
+            </div>
+        </section>
+
+        <section class="nosso-espaco">
+            <div class="texto-nosso-espaco">
+                <h1>Conheça Nosso Salão</h1>
+                
+                <p>Confira como é o nosso buffet. Com um espaço com diversos brinquedos, área para interação entre as pessoas e acesso pratico para nossos clientes. Trabalhamos com cada canto pronto para elevar o nível de sua festa.</p>
+                
+            </div>
+
+            <div class="carrossel-container">
+                <button class="btn-carrossel prev" onclick="scrollCarrossel(-1)">&#10094;</button>
+                
+                <div class="carrossel-slides" id="carrosselSlides">
+                    <img src="../assets/img/nosso_espaco_1.PNG" alt="Espaço do Buffet 1">
+                    <img src="../assets/img/nosso_espaco_2.PNG" alt="Espaço do Buffet 2">
+                    <img src="../assets/img/nosso_espaco_3.PNG" alt="Espaço do Buffet 3">
+                    <img src="../assets/img/nosso_espaco_4.PNG" alt="Espaço do Buffet 4">
+                    <img src="../assets/img/nosso_espaco_5.PNG" alt="Espaço do Buffet 5">
+                    <img src="../assets/img/nosso_espaco_6.PNG" alt="Espaço do Buffet 6">
+                    <img src="../assets/img/nosso_espaco_7.PNG" alt="Espaço do Buffet 7">
+                    <img src="../assets/img/nosso_espaco_8.PNG" alt="Espaço do Buffet 8">
+                </div>
+
+                <button class="btn-carrossel next" onclick="scrollCarrossel(1)">&#10095;</button>
+            </div>
+            </section>
             
         </section>
     </main>
@@ -64,7 +95,6 @@
                 <div class="footer-linha">
                 <span>📍</span><p>Avenida Parada Pinto, 885<br>Vila Nova Cachoeirinha</p>
                 </div>
-    
                 <div class="footer-linha">
                 <span>📞</span><p>(11) 94573-7905 | (11) 94906-7793</p>
                 </div>
@@ -84,6 +114,7 @@
         </a>
       <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
       <script>new window.VLibras.Widget('https://vlibras.gov.br/app');</script>
+      <script src="../script/espaco.js" defer></script>
 </body>    
 </html>
 

@@ -23,7 +23,7 @@ header {
     height: 146px;
     width: 100%;
     
-    background: rgba(0,0,0,.25);
+    background: rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(4px);
 
     z-index: 1000;
@@ -187,7 +187,7 @@ main{
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 .agendamento h2 {
-    color: #333;
+    color: #36c14c;
     text-align: center;
 }
 .agendamento input[type="date"] {

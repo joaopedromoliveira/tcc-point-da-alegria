@@ -107,18 +107,18 @@ main{
 
 /* ================= BANNER ================= */
 
-.banner-decoracao{
+.banner-eventos{
     position: relative;
     height: 600px;
 
     padding-top: 146px;
 
-    background-image: url("../assets/img/buffet-infantil.jpg");
+    background-image: url("../assets/img/foto\ decoração\ dinodecoracao.PNG");
     background-size: cover;
     background-position: center;
     overflow: hidden;
 }
-.banner-decoracao::before{
+.banner-eventos::before{
     content:"";
     position:absolute;
     inset:0;
@@ -127,6 +127,54 @@ main{
 
     z-index:1;
 }
+
+.texto-banner-eventos{
+    position: relative;
+    z-index: 2;
+
+    color: #f5f5f5;
+
+    margin-top: 260px;
+    margin-left: 80px;
+    max-width: 600px;
+}
+.texto-banner-eventos h1{
+    margin-bottom: 20px;
+    text-shadow: 3px 3px 15px rgba(0,0,0,.5);
+    font-size: 3rem;
+}
+.texto-banner-eventos p{
+    margin-top: 20px;
+    font-size: 1.3rem;
+    line-height: 1.7;
+}
+
+/* ================= CONTEÚDO ================= */
+
+.eventos{
+    display:flex;
+    align-items:center;
+    gap:60px;
+
+    max-width:1200px;
+    margin:0px auto;
+    margin-top:20px;
+}
+.texto-eventos{
+    width:450%;
+	flex:1;
+}
+.texto-eventos h1{
+    font-size:57px;
+    color:red;
+    margin-bottom:25px;
+}
+.texto-eventos p{
+    font-size:22px;
+    line-height:1.8;
+}
+
+
 
 /* ================= FOOTER ================= */
 
