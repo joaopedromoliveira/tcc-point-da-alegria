@@ -48,7 +48,8 @@ nav {
     font-size:18px;
     text-decoration:none;
 
-    transition:.3s;
+    border-bottom: 3px solid transparent; 
+    transition: color 0.3s ease;
 }
 .linksNav::after{
     content: "";
@@ -151,22 +152,21 @@ main {
 }
 .texto-azul{
     color: #008eff;
-    font-size: 40px;
+    font-size: 60px;
     font-family: "Outfit", sans-serif;
 }
 .texto-verde{
     color: #36c14c;
-    font-size: 40px;
+    font-size: 60px;
     font-family: "Outfit", sans-serif;
 }
 .texto-vermelho{
     color: red;
-    font-size: 40px;
+    font-size: 60px;
     font-family: "Outfit", sans-serif;
 }
 .texto-amarelo{
     color: #f5de84;
-    font-size: 40px;
     font-family: "Outfit", sans-serif;
 }
 
@@ -318,8 +318,12 @@ footer{
     line-height: 1.5;
 }
 #rotulo{
+    padding-top: 3px;
+    background: black;
+    color: red;
     text-align: center;
     font-size: bolder;
+    height: 25px;
 }
 
 /* ================= WPP FIXO ================= */

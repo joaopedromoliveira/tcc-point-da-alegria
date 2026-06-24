@@ -48,7 +48,8 @@ nav {
     font-size:18px;
     text-decoration:none;
 
-    transition:.3s;
+    border-bottom: 3px solid transparent; 
+    transition: color 0.3s ease;
 }
 .linksNav::after{
     content: "";
@@ -137,11 +138,11 @@ main{
 .texto-banner-contato h1{
     margin-bottom: 20px;
     text-shadow: 3px 3px 15px rgba(0,0,0,.5);
-    font-size: 3rem;
+    font-size: 60px;
 }
 .texto-banner-contato p{
     margin-top: 20px;
-    font-size: 1.3rem;
+    font-size: 24px;
     line-height: 1.7;
 }
 
@@ -166,7 +167,7 @@ main{
     margin-bottom:25px;
 }
 .texto-contato p{
-    font-size:22px;
+    font-size:24px;
     line-height:1.8;
 }
 
@@ -311,8 +312,12 @@ footer{
     line-height: 1.5;
 }
 #rotulo{
+    padding-top: 3px;
+    background: black;
+    color: #008cff;
     text-align: center;
     font-size: bolder;
+    height: 25px;
 }
 
 /* ================= WPP FIXO ================= */

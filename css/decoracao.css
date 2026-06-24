@@ -48,7 +48,8 @@ nav {
     font-size:18px;
     text-decoration:none;
 
-    transition:.3s;
+    border-bottom: 3px solid transparent; 
+    transition: color 0.3s ease;
 }
 .linksNav::after{
     content: "";
@@ -136,17 +137,17 @@ main{
 
     margin-top: 260px;
     margin-left: 80px;
-    max-width: 600px;
+    max-width: 700px;
 }
 .texto-banner-eventos h1{
     margin-bottom: 20px;
     text-shadow: 3px 3px 15px rgba(0,0,0,.5);
-    font-size: 3rem;
+    font-size: 60px;
 }
 .texto-banner-eventos p{
     margin-top: 20px;
-    font-size: 1.3rem;
     line-height: 1.7;
+    font-size: 24px;
 }
 
 /* ================= CONTEÚDO ================= */
@@ -158,19 +159,19 @@ main{
 
     max-width:1200px;
     margin:0px auto;
-    margin-top:20px;
+    margin-top:50px;
 }
 .texto-eventos{
     width:450%;
 	flex:1;
 }
 .texto-eventos h1{
-    font-size:57px;
+    font-size:60px;
     color:red;
     margin-bottom:25px;
 }
 .texto-eventos p{
-    font-size:22px;
+    font-size:24px;
     line-height:1.8;
 }
 
@@ -271,8 +272,12 @@ footer{
     line-height: 1.5;
 }
 #rotulo{
+    padding-top: 3px;
+    background: black;
+    color: red;
     text-align: center;
     font-size: bolder;
+    height: 25px;
 }
 
 /* ================= WPP FIXO ================= */
