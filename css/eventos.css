@@ -175,25 +175,34 @@ main{
     line-height:1.8;
 }
 /* ================= EVENTOS ================= */
-.evento-confraternizaçao img {
+
+.evento-confraternizaçao {
     display: flex;
-    justify-content: center;
-    height: 300px;
-    width: 200px;
-    margin: 120px 350px;
+    flex-wrap: wrap;         /* Permite que as imagens quebrem de linha se faltar espaço */
+    justify-content: center; /* Centraliza as imagens e o H2 horizontalmente */
+    align-items: center;     /* Alinha verticalmente */
+    gap: 20px;               /* Dá um espaço de 20px entre as imagens para não ficarem coladas */
+    max-width: 1300px;       /* Evita que o bloco fique colado nas bordas da tela */
+    margin: 50px auto;       /* Afasta o bloco dos outros elementos e centraliza o bloco na tela */
+    padding: 0 20px;
 }
 
+/* Garante que o H2 ocupe a linha inteira antes das imagens */
 .evento-confraternizaçao h2 {
-    color:rgb(113, 0, 111);
+    color: #008cff;;
     text-align: center;
-    margin: 40px 350px;
-    
+    width: 100%;             /* Força o título a pegar 100% da largura, jogando as fotos para baixo */
+    margin-bottom: 20px;     /* Espaço entre o título e as fotos */
 }
 
-
-.evento-confraternizaçao p
-
-
+/* Aplicado às imagens para controlar o tamanho e comportamento */
+.evento-confraternizaçao img {
+    height: 300px;
+    width: 400px;
+    object-fit: cover;       /* Evita que as imagens fiquem distorcidas */
+    border-radius: 8px;      /* Opcional: deixa os cantos das fotos levemente arredondados */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Opcional: uma sombra leve para dar profundidade */
+}
 
 
 /* ================= FOOTER ================= */
