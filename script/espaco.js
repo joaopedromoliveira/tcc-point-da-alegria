@@ -38,3 +38,24 @@ function atualizarBolinhas() {
         }
     }
 }
+
+function irParaSlide(indice) {
+    const containerParaMover = document.getElementById('carrosselSlides');
+    const containerVisor = document.querySelector('.carrossel-container');
+    const larguraSlide = containerVisor.clientWidth;
+
+    indiceAtualCarrossel = indice;
+
+    const deslocamento = -1 * (larguraSlide * indiceAtualCarrossel);
+    containerParaMover.style.transform = `translateX(${deslocamento}px)`;
+
+    atualizarBolinhas();
+}
+
+const bolinhas = document.querySelectorAll('#carrosselIndicadores .dot');
+
+bolinhas.forEach((bolinha, indice) => {
+    bolinha.addEventListener('click', () => {
+        irParaSlide(indice);
+    });
+});
