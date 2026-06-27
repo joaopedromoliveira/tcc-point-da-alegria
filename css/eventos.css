@@ -114,7 +114,7 @@ main{
 
     padding-top: 146px;
 
-    background-image: url("../assets/img/foto\ decoração\ dinodecoracao.PNG");
+    background-image: url("../assets/img/banner-eventos.png");
     background-size: cover;
     background-position: center;
     overflow: hidden;
@@ -189,7 +189,7 @@ main{
 
 /* Garante que o H2 ocupe a linha inteira antes das imagens */
 .evento-confraternizaçao h2 {
-    color: #008cff;;
+    color: black;
     text-align: center;
     width: 100%;             /* Força o título a pegar 100% da largura, jogando as fotos para baixo */
     margin-bottom: 20px;     /* Espaço entre o título e as fotos */
