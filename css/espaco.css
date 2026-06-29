@@ -421,3 +421,9 @@ footer{
 #wpp-link-fixo img:hover {
     transform: scale(1.1);
 }
+
+/* ================= RESPONSIVIDADE ================= */
+
+@media screen and (max-width:768px){
+    
+}

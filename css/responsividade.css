@@ -1,0 +1,578 @@
+/* ===========================================================
+   RESPONSIVE.CSS
+   Projeto: Point da Alegria
+   Desenvolvido para telas de até 768px
+=========================================================== */
+
+@media screen and (max-width:768px){
+
+/* ================= RESET ================= */
+
+html{
+    overflow-x:hidden;
+    scroll-behavior:smooth;
+}
+body{
+    overflow-x:hidden;
+}
+*{
+    max-width:100%;
+}
+footer{
+        height: auto;
+    } 
+
+/* ================= HEADER ================= */
+
+header{
+    position:absolute;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    height:auto;
+    padding:15px 20px;
+    gap:15px;
+}
+
+#logo{
+    width:170px;
+    height:auto;
+}
+
+nav{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:6px;
+}
+
+.linksNav{
+    margin:0;
+    padding:8px 10px;
+    font-size:15px;
+}
+.linksNav:hover{
+    transform:none;
+}
+
+/* ================= BANNERS ================= */
+
+.banner-home,
+.banner-sobre,
+.banner-espaco,
+.banner-eventos,
+.banner-localizacao,
+.banner-contato{
+    height:500px;
+    background-position:center;
+    background-size:cover;
+}
+
+/* ================= TEXTOS DOS BANNERS ================= */
+
+#content{
+    margin:0 25px;
+}
+#content p{
+    font-size:23px;
+    line-height:1.5;
+}
+.texto-vermelho,
+.texto-verde,
+.texto-azul{
+    font-size:38px;
+}
+.texto-banner-espaco,
+.texto-banner-contato,
+.texto-banner-eventos,
+.texto-localiza,
+.texto-sobre{
+    margin-top:180px;
+    margin-left:25px;
+    margin-right:25px;
+    max-width:none;
+}
+.texto-banner-espaco h1,
+.texto-banner-contato h1,
+.texto-banner-eventos h1,
+.texto-localiza h1,
+.texto-sobre h1{
+    font-size:38px;
+}
+.texto-banner-espaco p,
+.texto-banner-contato p,
+.texto-banner-eventos p,
+.texto-localiza p,
+.texto-sobre p{
+    font-size:18px;
+    line-height:1.6;
+}
+
+/* ================= SEÇÕES ================= */
+
+.quem-somos,
+.localizacao,
+.contato,
+.eventos{
+    display:flex;
+    flex-direction:column;
+    gap:35px;
+    width:100%;
+    padding:40px 22px;
+}
+.texto-quem-somos,
+.texto-localizacao,
+.texto-contato,
+.texto-eventos{
+    width:100%;
+}
+.texto-quem-somos h1,
+.texto-localizacao h1,
+.texto-contato h1,
+.texto-eventos h1{
+    font-size:34px;
+    text-align:center;
+    margin-bottom:20px;
+}
+.texto-quem-somos p,
+.texto-localizacao p,
+.texto-contato p,
+.texto-eventos p{
+    font-size:18px;
+    line-height:1.8;
+    text-align:justify;
+}
+
+/* ================= NOSSO ESPAÇO ================= */
+
+.nosso-espaco{
+    padding:40px 22px;
+    gap:35px;
+}
+
+.texto-nosso-espaco{
+    width:100%;
+}
+
+.texto-nosso-espaco h1{
+    font-size:34px;
+    text-align:center;
+}
+
+.texto-nosso-espaco p{
+    font-size:18px;
+    line-height:1.8;
+    text-align:justify;
+}
+
+/* ================= MAPA ================= */
+
+#maps{
+    padding:0;
+    width:100%;
+}
+
+.mapa-localizacao{
+    width:100%;
+}
+.mapa-localizacao iframe{
+    height:320px;
+}
+
+/* ================= AGENDAMENTO ================= */
+
+.agendamento{
+    width:90%;
+    padding:25px;
+}
+.agendamento h2{
+    font-size:24px;
+}
+.agendamento button{
+    width:100%;
+}
+
+/* ================= CARROSSEL ================= */
+
+.carrossel-bloco-completo{
+    width:100%;
+    padding:0 20px;
+    margin-top:25px;
+}
+.carrossel-container{
+    width:100%;
+    height:240px;
+    border-radius:12px;
+}
+.carrossel-slides img{
+    object-fit:cover;
+}
+.btn-carrossel{
+    width:38px;
+    height:38px;
+    font-size:18px;
+}
+.prev{
+    left:10px;
+}
+.next{
+    right:10px;
+}
+.carrossel-indicadores{
+    margin-top:15px;
+    gap:8px;
+}
+.dot{
+    width:10px;
+    height:10px;
+}
+
+/* ================= EVENTOS ================= */
+
+.evento-confraternizaçao{
+    gap:18px;
+    padding:0 20px;
+    margin-top:35px;
+}
+.evento-confraternizaçao h2{
+    font-size:28px;
+    margin-bottom:10px;
+}
+.evento-confraternizaçao img{
+    width:100%;
+    height:230px;
+    border-radius:12px;
+}
+
+/* ================= DADOS ================= */
+
+.dados{
+    margin-top:20px;
+}
+
+.dados p{
+    font-size:18px;
+    line-height:1.6;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    height:auto;
+    padding-top:35px;
+}
+.colunas{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    gap:40px;
+    height:auto;
+    padding:0 25px 40px;
+}
+
+/* ================= PRIMEIRA COLUNA ================= */
+
+#primeira-coluna{
+    width:100%;
+}
+.logo-footer{
+    width:180px;
+    height:auto;
+}
+#redes-sociais{
+    width:auto;
+}
+
+/* ================= LINKS ================= */
+
+#coluna-central{
+    display:flex;
+    flex-direction:row;
+    gap:25px;
+    text-align:center;
+}
+.tres-links{
+    font-size:18px;
+    gap:8px;
+}
+
+/* ================= ENDEREÇO ================= */
+
+#footer-encontre{
+    width:100%;
+    align-items:center;
+    text-align:center;
+}
+.footer-linha{
+    justify-content:center;
+    align-items:flex-start;
+}
+
+/* ================= RÓTULO ================= */
+
+#rotulo{
+    height:auto;
+    padding:10px;
+    font-size:15px;
+    line-height:1.5;
+}
+
+/* ================= WHATSAPP ================= */
+
+#wpp-link-fixo{
+    right:15px;
+    bottom:15px;
+}
+#wpp-link-fixo img{
+    width:52px;
+}
+
+/* ================= IMAGENS ================= */
+
+img{
+    max-width:100%;
+    height:auto;
+}
+
+/* ================= IFRAME ================= */
+
+iframe{
+    max-width:100%;
+}
+
+/* ================= VÍDEO ================= */
+
+.video-container{
+
+    height:100vh;
+}
+.video-container video{
+
+    object-position:center;
+}
+
+/* ================= ONDAS ================= */
+
+.custom-shape-divider-bottom svg{
+
+    height:90px;
+}
+
+/* ================= ESPAÇAMENTOS ================= */
+
+section{
+
+    overflow:hidden;
+}
+
+main{
+    overflow:hidden;
+}
+h1,h2,h3{
+    word-break:normal;
+}
+p{
+    word-break:normal;
+}
+
+/* ================= AJUSTES FINAIS ================= */
+
+/* Evita qualquer elemento ultrapassar a largura da tela */
+*,
+*::before,
+*::after{
+    box-sizing:border-box;
+}
+
+/* Remove espaços laterais indesejados */
+body,
+main,
+section,
+header,
+footer{
+    max-height: max-content;
+    max-width:100%;
+    overflow-x:hidden;
+}
+
+/* ================= BOTÕES ================= */
+
+button,
+input,
+textarea,
+select{
+    font-size:16px;
+}
+
+/* Evita zoom automático no iPhone */
+input,
+textarea,
+select{
+    border-radius:8px;
+}
+
+/* ================= LINKS ================= */
+
+a{
+    -webkit-tap-highlight-color:transparent;
+}
+
+/* Área maior para toque */
+.linksNav,
+.links-footer,
+.btn-carrossel{
+    min-height:44px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+/* ================= TÍTULOS ================= */
+
+h1{
+    line-height:1.2;
+}
+h2{
+    line-height:1.3;
+}
+p{
+    line-height:1.8;
+}
+
+/* ================= BANNERS ================= */
+
+.banner-sobre,
+.banner-eventos,
+.banner-localizacao,
+.banner-contato,
+.banner-espaco{
+    background-position:center center;
+}
+
+/* ================= SOMBRAS ================= */
+
+.carrossel-container,
+.mapa-localizacao iframe,
+.agendamento{
+    box-shadow:0 6px 18px rgba(0,0,0,.15);
+}
+
+/* ================= TRANSIÇÕES ================= */
+
+.linksNav,
+.links-footer,
+button,
+.btn-carrossel,
+#wpp-link-fixo img{
+    transition:.25s ease;
+}
+
+/* ================= IMAGENS ================= */
+
+.evento-confraternizaçao img:hover{
+    transform:none;
+}
+
+.logo-footer,
+#logo{
+    object-fit:contain;
+}
+
+/* ================= ESPAÇAMENTOS ================= */
+
+main>*{
+    margin-left:auto;
+    margin-right:auto;
+}
+
+section:last-child{
+    padding-bottom:20px;
+}
+
+/* ================= FOOTER ================= */
+
+.footer-colunas{
+    align-items:center;
+}
+.footer-colunas h3{
+    margin-bottom:10px;
+}
+.footer-colunas p{
+    text-align:center;
+}
+
+/* ================= SCROLL ================= */
+
+html{
+    scroll-padding-top:110px;
+}
+
+/* ================= PEQUENAS TELAS ================= */
+
+@media (max-width:480px){
+
+    header{
+        padding:15px 10px;
+    }
+    #logo{
+        width:145px;
+    }
+    .linksNav{
+        font-size:14px;
+        padding:6px 8px;
+    }
+    #content p{
+        font-size:19px;
+    }
+    .texto-vermelho,
+    .texto-verde,
+    .texto-azul{
+        font-size:30px;
+    }
+    .texto-banner-espaco h1,
+    .texto-banner-contato h1,
+    .texto-banner-eventos h1,
+    .texto-localiza h1,
+    .texto-sobre h1{
+        font-size:30px;
+    }
+    .texto-banner-espaco p,
+    .texto-banner-contato p,
+    .texto-banner-eventos p,
+    .texto-localiza p,
+    .texto-sobre p{
+        font-size:16px;
+    }
+    .texto-quem-somos h1,
+    .texto-localizacao h1,
+    .texto-contato h1,
+    .texto-eventos h1,
+    .texto-nosso-espaco h1{
+        font-size:28px;
+    }
+    .texto-quem-somos p,
+    .texto-localizacao p,
+    .texto-contato p,
+    .texto-eventos p,
+    .texto-nosso-espaco p{
+        font-size:16px;
+    }
+    .carrossel-container{
+        height:200px;
+    }
+    .evento-confraternizaçao img{
+        height:190px;
+    }
+    .mapa-localizacao iframe{
+        height:260px;
+    }
+    #wpp-link-fixo img{
+        width:48px;
+    }
+
+}
+}
