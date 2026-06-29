@@ -15,7 +15,7 @@ header{
     font-size:large;
     font-weight:bold;
 
-    position:absolute;
+    position:fixed;
     top:0;
     left:0;
     width:100%;
@@ -305,7 +305,7 @@ footer{
     z-index: 1000;
 }
 #wpp-link-fixo img {
-    width: 60px;
+    width: 80px;
     height: auto;
     filter: drop-shadow(0 0 5px rgba(0,0,0,0.3));
     transition: transform 0.3s ease;

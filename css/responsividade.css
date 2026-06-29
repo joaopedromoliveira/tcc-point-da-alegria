@@ -25,7 +25,7 @@ footer{
 /* ================= HEADER ================= */
 
 header{
-    position:absolute;
+    position:fixed;
     display:flex;
     flex-direction:column;
     justify-content:center;
@@ -197,7 +197,7 @@ nav{
 /* ================= CARROSSEL ================= */
 
 .carrossel-bloco-completo{
-    width:100%;
+    width:115%;
     padding:0 20px;
     margin-top:25px;
 }
@@ -285,6 +285,9 @@ footer{
 #redes-sociais{
     width:auto;
 }
+#redes-sociais h3{
+        padding-top: 9px;
+    }
 
 /* ================= LINKS ================= */
 
